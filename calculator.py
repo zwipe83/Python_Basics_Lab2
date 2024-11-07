@@ -34,7 +34,7 @@ def pow(x,y):
 
 # Only run the code below if this is the main .py file
 if __name__ == "__main__":
-    #The input function reads a line, and the program converts the entire line to a floatingpoint
+    #The input function reads a line, and the program converts the entire line to a floating point
     #number. Test entering two numbers on the same line. What goes wrong?
     #### Input is interpreted as text and converted to a 'string', Type converting a 'string' to a 'float' doesn't work.
 
