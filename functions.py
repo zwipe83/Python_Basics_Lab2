@@ -53,6 +53,13 @@ def print_c2f_table(from_c, to_c):
         print("C: ",celsius," F:",to_fahrenheit(celsius))
     print('\n')
 
+# Print odd numbers in provided range, both parameters being inclusive
+def print_odd_numbers(from_num, to_num):
+    for num in range(from_num, to_num+1):
+        if num % 2 == 1:
+            print(num)
+    print('\n')
+
 # Print results
 print("\n\n5 miles is", round(to_km(5),2),"km")
 print("5 km is", round(to_miles(5),2),"miles")
@@ -60,3 +67,5 @@ print("5 C is", round(to_fahrenheit(5),2), "F")
 print("5 F is", round(to_celsius(5),2), "C")
 print("5 cm is", round(circle_area(5),2), "cm2", end='\n\n')
 print_c2f_table(-12,12)
+print_odd_numbers(-12,12)
+print_odd_numbers(5,27)
